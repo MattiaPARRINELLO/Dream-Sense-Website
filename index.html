@@ -13,11 +13,26 @@
         font-family: "Brahama";
         src: url("font.otf") format("opentype");
       }
+
+      :root {
+        --gradient-start: #2a3e55;
+        --gradient-end: #5d7b9f;
+        --gradient-mid: #3e5675;
+
+        --background-color: #283848;
+        --sec-background-color: #1e3a4c;
+      }
+
       body {
         font-family: "Arial", sans-serif;
         margin: 0;
         padding: 0;
-        background: linear-gradient(180deg, #0f2027, #203a43, #2c5364);
+        background: linear-gradient(
+          180deg,
+          var(--gradient-start),
+          var(--gradient-mid),
+          var(--gradient-end)
+        );
         color: #f5f5f5;
         opacity: 0;
         animation: fadeIn 1.5s ease-in-out forwards;
@@ -31,7 +46,7 @@
         }
       }
       header {
-        background-color: #1a252f;
+        background-color: var(--background-color);
         color: #ffffff;
         text-align: center;
         padding: 20px 0;
@@ -55,7 +70,7 @@
         margin: 40px auto;
         max-width: 900px;
         text-align: left;
-        background: #1e3a4c;
+        background: var(--sec-background-color);
         border-radius: 12px;
         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
         padding: 30px;
@@ -83,19 +98,19 @@
         }
       }
       section h2 {
-        color: #ffffff;
+        color: #b9c7d8;
         font-size: 2.2em;
         margin-bottom: 20px;
       }
       section p {
         font-size: 1.2em;
         line-height: 1.8;
-        color: #cfd8dc;
+        color: #ffffff;
       }
       footer {
         text-align: center;
         padding: 15px 0;
-        background-color: #1a252f;
+        background-color: var(--background-color);
         color: #f5f5f5;
         margin-top: 40px;
         box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
@@ -129,7 +144,7 @@
       }
       .feature h3 {
         font-size: 1.6em;
-        color: #ffffff;
+        color: #e1e6eb;
         margin-bottom: 10px;
       }
       .feature p {
@@ -219,7 +234,7 @@
     </main>
 
     <footer>
-      <p>&copy; 2025 DreamSense. All rights reserved. (c)</p>
+      <p>&copy; 2025 DreamSense. All rights reserved. ©</p>
     </footer>
   </body>
 </html>
