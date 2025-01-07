@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="DreamSense: The pillow that dreams with you. Track your dreams, unlock their meaning, and wake up refreshed. Where science meets serenity."
+    />
+    <title>DreamSense - The Pillow That Dreams With You</title>
+    <style>
+      @font-face {
+        font-family: "Brahama";
+        src: url("font.otf") format("opentype");
+      }
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(180deg, #0f2027, #203a43, #2c5364);
+        color: #f5f5f5;
+        opacity: 0;
+        animation: fadeIn 1.5s ease-in-out forwards;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      header {
+        background-color: #1a252f;
+        color: #ffffff;
+        text-align: center;
+        padding: 20px 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      header svg {
+        max-width: 150px;
+        height: auto;
+      }
+      .customFont {
+        font-family: "Brahama";
+      }
+      main {
+        padding: 20px;
+        text-align: center;
+      }
+      section {
+        margin: 40px auto;
+        max-width: 900px;
+        text-align: left;
+        background: #1e3a4c;
+        border-radius: 12px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+        padding: 30px;
+        transform: translateY(50px);
+        opacity: 0;
+        animation: slideUp 1s ease-in-out forwards;
+      }
+      section:nth-child(1) {
+        animation-delay: 0.5s;
+      }
+      section:nth-child(2) {
+        animation-delay: 0.8s;
+      }
+      section:nth-child(3) {
+        animation-delay: 1.1s;
+      }
+      @keyframes slideUp {
+        from {
+          transform: translateY(50px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+      section h2 {
+        color: #ffffff;
+        font-size: 2.2em;
+        margin-bottom: 20px;
+      }
+      section p {
+        font-size: 1.2em;
+        line-height: 1.8;
+        color: #cfd8dc;
+      }
+      footer {
+        text-align: center;
+        padding: 15px 0;
+        background-color: #1a252f;
+        color: #f5f5f5;
+        margin-top: 40px;
+        box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+      }
+      .features {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+      .feature {
+        flex: 1 1 300px;
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid #34495e;
+        border-radius: 12px;
+        background: #2c3e50;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        transform: translateY(50px);
+        opacity: 0;
+        animation: slideUp 1s ease-in-out forwards;
+      }
+      .feature:nth-child(1) {
+        animation-delay: 0.6s;
+      }
+      .feature:nth-child(2) {
+        animation-delay: 0.8s;
+      }
+      .feature:nth-child(3) {
+        animation-delay: 1s;
+      }
+      .feature h3 {
+        font-size: 1.6em;
+        color: #ffffff;
+        margin-bottom: 10px;
+      }
+      .feature p {
+        font-size: 1.1em;
+        line-height: 1.6;
+        color: #cfd8dc;
+      }
+      #logo {
+        max-width: 200px;
+        height: auto;
+      }
+      #text {
+        filter: invert(59%) sepia(55%) saturate(569%) hue-rotate(201deg)
+          brightness(109%) contrast(98%);
+        max-width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="logo crop.png" alt="DreamSense logo" id="logo" />
+      <img src="Sans titre.svg" alt="DreamSense text" id="text" />
+      <p>The Pillow That Dreams With You</p>
+    </header>
+
+    <main>
+      <section>
+        <h2 class="customFont">Introducing DreamSense</h2>
+        <p>
+          DreamSense is not just a pillow—it’s a journey into your subconscious.
+          Track your dreams, unlock their meaning, and wake up refreshed every
+          morning. Soft as a cloud, smart as your imagination, DreamSense
+          combines cutting-edge technology with unmatched comfort to transform
+          your sleep experience.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="customFont">Key Features</h2>
+        <div class="features">
+          <div class="feature">
+            <h3>Dream Analysis</h3>
+            <p>
+              Track and decode the patterns of your dreams with advanced AI.
+              DreamSense helps you understand the hidden meanings of your
+              subconscious thoughts.
+            </p>
+          </div>
+          <div class="feature">
+            <h3>Dream Customization</h3>
+            <p>
+              Create your dreamscape. Input your desired scenarios, and
+              DreamSense helps guide your mind for personalized, immersive dream
+              experiences.
+            </p>
+          </div>
+          <div class="feature">
+            <h3>Unmatched Comfort</h3>
+            <p>
+              Soft as a cloud and designed for serenity, DreamSense is crafted
+              with ergonomic precision for ultimate relaxation and support.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="customFont">The Science Behind DreamSense</h2>
+        <p>
+          DreamSense combines neuroscience and technology to revolutionize the
+          way you sleep. Using neural interfaces and REM-monitoring sensors,
+          DreamSense deciphers your brainwaves and offers insights into your
+          dreams, unlocking the potential for deeper, smarter sleep. Experience
+          the harmony of science and serenity.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="customFont">DreamSense: Sleep Smarter, Dream Deeper</h2>
+        <p>
+          With DreamSense, each night becomes an opportunity to explore, learn,
+          and relax. It’s more than a pillow—it’s your companion in the journey
+          of dreaming deeper and waking up better. Welcome to the future of
+          sleep.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 DreamSense. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
